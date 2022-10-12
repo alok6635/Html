@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element -</title>
+    <style>
+        h3{
+            font-size: 18px;
+            font-weight: 300;
+        }
+        h5{
+            font-size: 18px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Element -</h2>
+    <ol>
+        <li>label</li>
+        <li>input</li>
+        <li>textarea</li>
+        <li>button</li>
+        <li>select</li>
+        <li>datalist</li>
+        <li>fieldset</li>
+        <li>legend</li>
+        <li>output</li>
+        <li>option</li>
+        <li>optgroup</li>
+    </ol>
+<h2>Label -</h2>
+<h3>label element is useful for screen-reader users, because the screen-reader will read  the label when the user focus on the input element.</h3>
+<h5>Ex - Label and Input </h5>
+<form action="">
+    <label for="cars">Car -</label>
+    <input type="text" value="Tata">
+    <input type="submit">
+</form>
+
+<!-- textarea Element -->
+<h2>Textarea Element - </h2>
+<h3>defines a multi-line input field (a text area).</h3>
+<h3>rows attribute specifies the visible number of lines in a text area.</h3>
+<h3>cols attribute specifies the visible width of a text area.</h3>
+<h5>Ex -</h5>
+<form action="">
+    <textarea name="message"  cols="40" rows="20"></textarea>
+</form>
+
+<!-- button -->
+<h2>Button -</h2>
+<h3>button element defines a clickable button.</h3>
+<button type="button" onclick="alert('Hello World')">Click Me!</button>
+
+<!-- select -->
+<h2>Select - </h2>
+<h3>select element defines a drop-down list.</h3>
+<h5>Ex -</h5>
+<form action="">
+    <label for="cars">Choose a car.</label>
+    <select name="" id="">
+        <option value="tata">tata</option>
+        <option value="ford">ford</option>
+        <option value="mahiendra">mahiendra</option>
+        <option value="hundai">hundai</option>
+        <option value="renault">renault</option>
+    </select>
+    <input type="submit">
+</form>
+<h4>Note - option elements defines an option that can be selected.
+    By default, the first item in the drop-down list is selected.</h4>
+<!-- datalist -->
+<h2>Datalist -</h2>
+<h3>datalist element specifies a list of pre-defined options for an input element.</h3>
+<h5>Ex -</h5>
+<form action="">
+   <input list="cars">
+   <datalist id="cars">
+    <option value="tata"></option>
+    <option value="ford"></option>
+    <option value="mahiendra"></option>
+    <option value="hundai"></option>
+    <option value="renault"></option>
+   </datalist>
+   <input type="submit">
+</form>
+<h4>Note -list attribute of the input element, must refer to the id attribute of the datalist element.datalist is the semantic tags.</h4>
+
+<!-- fieldset -->
+<h2>Fieldset &  legend  -</h2>
+<h3>fieldset element is used to group related data in a form.</h3>
+<h3>legend element defines a caption for the fieldset element.</h3>
+<h5>Ex -</h5>
+<form action="">
+    <fieldset>
+        <legend>Our details -</legend>
+        <label for="">fist name</label><br>
+        <input type="text" value="alok"><br>
+        <label for="">Last name</label><br>
+        <input type="text" value="Kumar"><br><br>
+        <input type="submit">
+    </fieldset>
+</form>
+</body>
+</html>
+

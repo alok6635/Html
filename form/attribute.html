@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes</title>
+    <style>
+        h3{
+            font-size: 18px;
+            font-weight: 300;
+        }
+        h5{
+            font-size: 18px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!-- form attributes -->
+<h2>Form Attributes -</h2>
+<ol>
+    <li>action</li>
+    <li>method</li>
+    <li>target</li>
+    <li>Autocomplete</li>
+    <li>Novalidate</li>
+</ol>
+
+<!-- Action attributes -->
+<h2>1. Action attributes -</h2>
+<h3>action attribute defines the action to be performed when the form is submitted</h3>
+<h5>Ex-</h5>
+<form action="/action_page.php">
+    <label>First name -</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label>Last name -</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- method attributes -->
+  <h2>Method attributes - </h2>
+  <h3>method attribute specifies the HTTP method to be used when submitting the form data.
+    form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post")
+  </h3>
+  <!--Get method-  -->
+  <h5>Ex GET method -</h5>
+  <form action="/action_page.php" method="get">
+    <label for="">First name</label><br>
+    <input type="text" value="Kittu"><br>
+    <label for="">Last name</label><br>
+    <input type="text" value="yadav"><br>
+    <input type="submit" value="submit">
+  </form>
+  <h3>Note - The length of a URL is limited (2048 characters).GET is good for non-secure data, like query strings in Google.</h3>
+
+  <!-- post method -->
+  <h5>Ex post method -</h5>
+  <form action="/action_page.php" method="post">
+    <label for="">First name</label><br>
+    <input type="text" value="Kittu"><br>
+    <label for="">Last name</label><br>
+    <input type="text" value="yadav"><br>
+    <input type="submit" value="submit">
+  </form>
+  <h3> Note - POST has no size limitations, and can be used to send large amounts of data.</h3>
+
+  <!-- Target Attribute -->
+  <h2>Target Attribute -</h2>
+  <h3>target attribute specifies where to display the response that is received after submitting the form</h3>
+  <h3>Target attribute can have one of the following values-</h3>
+  <ol>
+    <li>blank</li>
+    <li>self</li>
+    <li>parent</li>
+    <li>top</li>
+  </ol>
+  <h3>blank -  displayed in a new window or tab.</h3>
+  <h3>self - displayed in the current window</h3>
+  <h3>parent - displayed in the parent frame</h3>
+  <h3>top - displayed in the full body of the window.</h3>
+  <h5>Ex -  blank</h5>
+  <form action="/action_page.php" target="_blank">
+    <label for="">First name:</label><br>
+    <input type="text"  value="John"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  <h5>Ex -  self</h5>
+  <form action="/action_page.php" target="_self">
+    <label for="">First name:</label><br>
+    <input type="text"  value="John"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  <h5>Ex -  parent</h5>
+  <form action="/action_page.php" target="_parent">
+    <label for="">First name:</label><br>
+    <input type="text"  value="John"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  <h5>Ex -  top</h5>
+  <form action="/action_page.php" target="_top">
+    <label for="">First name:</label><br>
+    <input type="text"  value="John"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+
+  <!-- Autocomplete Attribute -->
+  <h2>Autocomplete Attribute -</h2>
+  <h3>autocomplete attribute specifies whether a form should have autocomplete on or off.</h3>
+  <h3>When autocomplete is on, the browser automatically complete values based on values that the user has entered before.</h3>
+  <h5>Ex -</h5>
+  <form action="/action_page.php" autocomplete="on">
+    <label for="">First name:</label>
+    <input type="text"><br><br>
+    <label for="">Email:</label>
+    <input type="text"><br><br>
+    <input type="submit">
+  </form>
+
+  <!-- Novalidate Attribute -->
+  <h2>Novalidate Attribute - </h2>
+  <h3> novalidate attribute is a boolean attribute.</h3>
+  <h3>When present, it specifies that the form-data (input) should not be validated when submitted.</h3>
+  <h5>Ex -</h5>
+  <form action="/action_page.php" novalidate>
+  <label for="">Enter your email:</label>
+  <input type="email" ><br><br>
+  <input type="submit">
+</form>
+</body>
+</html>
+
